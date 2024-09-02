@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeAlpha - Age Calculator</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Age Calculator</h1>
+        <p class="description">Use this age calculator to determine your exact age in years. Simply enter your birth date by selecting the day, month, and year, and click the <strong>"Calculate Your Age"</strong> button to see the result.</p>
+        <div class="input-container">
+            <label for="day">Day:</label>
+            <input type="number" id="day" placeholder="dd" min="1" max="31">
+            <label for="month">Month:</label>
+            <select id="month">
+                <option value="" disabled selected>Select Month</option>
+                <option value="1">January</option>
+                <option value="2">February</option>
+                <option value="3">March</option>
+                <option value="4">April</option>
+                <option value="5">May</option>
+                <option value="6">June</option>
+                <option value="7">July</option>
+                <option value="8">August</option>
+                <option value="9">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+            <label for="year">Year:</label>
+            <input type="number" id="year" placeholder="yy" min="1900" max="2024">
+        </div>
+        <button id="calculate-btn"><strong>Calculate Your Age</strong></button>
+        <div class="loader-container" id="loader">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+        <div class="result-container">
+            <h2 id="result"></h2>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <p>CodeAlpha - Age Calculator | Created By Taha Kashif Mirza</p>
+    </footer>
+
+    <script src="Script/Script.js"></script>
+</body>
+</html>
